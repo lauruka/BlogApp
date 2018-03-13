@@ -1,0 +1,5 @@
+<ul *ngFor="let post of listPost" class="list-group list-group-flush">
+  <li class="list-group-item"> 
+    <app-post [myPost]="post" [showStars]="showStars" (postDelete)="onPostDeleted()"></app-post>
+  </li>
+</ul>

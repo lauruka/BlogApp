@@ -1,0 +1,8 @@
+<div class="form-group">
+  <label class='label' for="inputText">Your comment</label>
+  <input type='text' [(ngModel)]='comment 'id='inputText'>
+  <label class='label' for="inputAuthor">Author</label>
+  <input type='text' [(ngModel)]="author" id='inputAuthor'>
+</div>
+<button type='button' (click)="createPost()" >Comment</button>
+{{author}}

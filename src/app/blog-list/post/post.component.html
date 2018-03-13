@@ -1,0 +1,8 @@
+<div [ngStyle]="{'color': myPost.country === 'Lithuania'? 'green' : 'red'}">
+    {{myPost.title}} says {{myPost.content}} on {{myPost.date}}
+    <span *ngIf="myPost.author === 'Petras'"> VIP Blogger</span>
+    <span [hidden]="!showStars"> *** </span>
+    <button (click)="deletePost()" [disabled]='disabled'>delete me</button>   
+</div>
+
+
